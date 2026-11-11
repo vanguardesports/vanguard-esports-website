@@ -1,0 +1,251 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#050505">
+    <meta name="description" content="Суббренды и партнёры Vanguard Esports.">
+    <title>Партнёры — Vanguard Esports</title>
+    <link rel="icon" type="image/svg+xml" href="assets/logos/favicon.svg">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <style>
+        .partners-page { padding-bottom: 90px; }
+        .partners-intro { padding: 75px 0 45px; }
+        .partners-eyebrow {
+            color: #999;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+        .partners-intro h1 {
+            margin: 14px 0;
+            font-size: clamp(34px, 6vw, 58px);
+            font-weight: 800;
+            letter-spacing: -2px;
+        }
+        .partners-intro p {
+            max-width: 620px;
+            color: #999;
+            line-height: 1.7;
+        }
+        .partners-section { padding: 35px 0; }
+        .partners-section h2 {
+            font-size: 26px;
+            margin: 0 0 22px;
+        }
+        .partner-card {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 35px;
+            padding: 35px;
+            background: #101010;
+            border: 1px solid #292929;
+        }
+        .partner-brand {
+            min-height: 220px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            border-right: 1px solid #292929;
+            padding-right: 25px;
+        }
+        .partner-brand strong {
+            font-size: clamp(28px, 4vw, 42px);
+            letter-spacing: -1.5px;
+        }
+        .partner-brand span {
+            margin-top: 12px;
+            color: #999;
+            font-size: 10px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+        .partner-info h3 {
+            margin: 0 0 14px;
+            font-size: 22px;
+        }
+        .partner-info p {
+            color: #999;
+            line-height: 1.8;
+            margin: 0 0 20px;
+        }
+        .partner-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .partner-tag {
+            padding: 8px 12px;
+            border: 1px solid #333;
+            color: #bbb;
+            font-size: 10px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        .empty-partners {
+            padding: 25px;
+            border: 1px dashed #333;
+            color: #777;
+            line-height: 1.7;
+        }
+        @media (max-width: 650px) {
+            .partner-card { grid-template-columns: 1fr; padding: 22px; gap: 22px; }
+            .partner-brand {
+                min-height: 130px;
+                border-right: 0;
+                border-bottom: 1px solid #292929;
+                padding: 0 0 22px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+<header class="header">
+    <div class="container">
+        <div class="header-inner">
+            <a href="index.html" class="logo" aria-label="Vanguard Esports">
+                <img src="assets/logos/favicon.svg" alt="Vanguard" width="38" height="38">
+                <span>VANGUARD<span class="logo-accent"> ESPORTS</span></span>
+            </a>
+
+            <nav class="nav">
+                <a href="index.html" data-i18n="nav.home">Главная</a>
+                <a href="teams.html" data-i18n="nav.teams">Составы</a>
+                <a href="matches.html" data-i18n="nav.matches">Матчи</a>
+                <a href="news.html" data-i18n="nav.news">Новости</a>
+                <a href="partners.html" class="active" aria-current="page">Партнёры</a>
+                <a href="about.html" data-i18n="nav.about">О нас</a>
+                <a href="contacts.html" data-i18n="nav.contacts">Контакты</a>
+            </nav>
+
+            <div class="header-actions">
+                <button class="lang-switch" id="langSwitch" type="button">EN</button>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle"
+                        type="button" aria-label="Открыть меню">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html" data-i18n="nav.home">Главная</a>
+        <a href="teams.html" data-i18n="nav.teams">Составы</a>
+        <a href="matches.html" data-i18n="nav.matches">Матчи</a>
+        <a href="news.html" data-i18n="nav.news">Новости</a>
+        <a href="partners.html" class="active" aria-current="page">Партнёры</a>
+        <a href="about.html" data-i18n="nav.about">О нас</a>
+        <a href="contacts.html" data-i18n="nav.contacts">Контакты</a>
+    </div>
+</header>
+
+<main class="partners-page">
+    <section class="partners-intro">
+        <div class="container">
+            <div class="partners-eyebrow">VANGUARD ESPORTS / ECOSYSTEM</div>
+            <h1>Партнёры и экосистема</h1>
+            <p>
+                Проекты, суббренды и организации, связанные с развитием
+                экосистемы Vanguard Esports.
+            </p>
+        </div>
+    </section>
+
+    <section class="partners-section">
+        <div class="container">
+            <div class="partners-eyebrow">01 / SUBBRANDS</div>
+            <h2>Суббренды</h2>
+
+            <article class="partner-card">
+                <div class="partner-brand">
+                    <strong>NOCTEL RELOAD</strong>
+                    <span>Vanguard Ecosystem</span>
+                </div>
+
+                <div class="partner-info">
+                    <h3>Noctel Reload</h3>
+                    <p>
+                        Noctel Reload — самостоятельный проект в экосистеме
+                        Vanguard Esports. Проект сохраняет собственное
+                        название, визуальную идентичность и внутреннее
+                        управление, развиваясь в рамках партнёрских отношений
+                        с Vanguard.
+                    </p>
+
+                    <div class="partner-meta">
+                        <span class="partner-tag">Subbrand</span>
+                        <span class="partner-tag">Independent identity</span>
+                        <span class="partner-tag">Vanguard Ecosystem</span>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="partners-section">
+        <div class="container">
+            <div class="partners-eyebrow">02 / PARTNERS</div>
+            <h2>Партнёры</h2>
+            <div class="empty-partners">
+                Информация о партнёрах будет опубликована позднее.
+            </div>
+        </div>
+    </section>
+
+    <section class="partners-section">
+        <div class="container">
+            <div class="partners-eyebrow">03 / SPONSORS</div>
+            <h2>Спонсоры</h2>
+            <div class="empty-partners">
+                Информация о спонсорах будет опубликована после заключения
+                соответствующих соглашений.
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-main">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">
+                    <img src="assets/logos/favicon.svg" alt="Vanguard" width="38" height="38">
+                    <span>VANGUARD<span class="logo-accent"> ESPORTS</span></span>
+                </a>
+                <p data-i18n="footer.description">Киберспортивная организация по Counter-Strike 2.</p>
+            </div>
+
+            <div class="footer-column">
+                <h3 data-i18n="footer.navigation">НАВИГАЦИЯ</h3>
+                <ul>
+                    <li><a href="teams.html" data-i18n="nav.teams">Составы</a></li>
+                    <li><a href="matches.html" data-i18n="nav.matches">Матчи</a></li>
+                    <li><a href="news.html" data-i18n="nav.news">Новости</a></li>
+                    <li><a href="partners.html">Партнёры</a></li>
+                    <li><a href="about.html" data-i18n="nav.about">О нас</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3 data-i18n="footer.social">СОЦИАЛЬНЫЕ СЕТИ</h3>
+                <ul>
+                    <li><a href="https://t.me/vanguard_esports" target="_blank" rel="noopener noreferrer">Telegram</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <span>© <span data-current-year></span> Vanguard Esports.</span>
+            <span data-i18n="footer.rights">Все права защищены.</span>
+        </div>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
