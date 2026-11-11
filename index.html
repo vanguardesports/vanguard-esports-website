@@ -1,273 +1,156 @@
-
 <!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#080808">
+    <meta name="theme-color" content="#08090b">
 
     <title>Vanguard Esports — More Than A Team</title>
-    <meta name="description" content="Vanguard Esports — независимая киберспортивная организация по Counter-Strike 2. Main, Academy и Junior.">
+    <meta name="description" content="Официальный сайт Vanguard Esports — независимой киберспортивной организации по Counter-Strike 2. Составы, матчи, новости и достижения.">
+    <link rel="canonical" href="https://vanguardesportsvt.netlify.app/">
 
     <meta property="og:type" content="website">
     <meta property="og:title" content="Vanguard Esports — More Than A Team">
-    <meta property="og:description" content="Официальный сайт Vanguard Esports. Составы, матчи, новости и контакты.">
+    <meta property="og:description" content="Официальный сайт Vanguard Esports. Составы, матчи, новости и достижения.">
     <meta property="og:site_name" content="Vanguard Esports">
 
-    <link rel="icon" href="assets/logos/favicon.png" type="image/png">
+    <link rel="icon" href="assets/logos/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="css/styles.css">
-
     <meta name="robots" content="index, follow">
 </head>
-
 <body>
+<a class="skip-link" href="#main-content" data-i18n="common.skip">Перейти к содержимому</a>
 
 <header class="header">
-    <div class="container header-container">
-
+    <div class="container header-inner">
         <a href="index.html" class="logo" aria-label="Vanguard Esports — главная">
             <span class="logo-mark">VT</span>
-            <span class="logo-text">VANGUARD<span>ESPORTS</span></span>
+            <span class="logo-text">VANGUARD<small>ESPORTS</small></span>
         </a>
 
         <nav class="nav" aria-label="Основная навигация">
-            <a href="index.html" class="nav-link active" data-i18n="nav.home">Главная</a>
-            <a href="teams.html" class="nav-link" data-i18n="nav.teams">Составы</a>
-            <a href="matches.html" class="nav-link" data-i18n="nav.matches">Матчи</a>
-            <a href="news.html" class="nav-link" data-i18n="nav.news">Новости</a>
-            <a href="about.html" class="nav-link" data-i18n="nav.about">Об организации</a>
-            <a href="contacts.html" class="nav-link" data-i18n="nav.contacts">Контакты</a>
+            <a href="index.html" class="active" data-i18n="nav.home" aria-current="page">Главная</a>
+            <a href="teams.html" data-i18n="nav.teams">Составы</a>
+            <a href="matches.html" data-i18n="nav.matches">Матчи</a>
+            <a href="news.html" data-i18n="nav.news">Новости</a>
+            <a href="awards.html" data-i18n="nav.awards">Награды</a>
+            <a href="partners.html" data-i18n="nav.partners">Партнёры</a>
+            <a href="about.html" data-i18n="nav.about">О нас</a>
+            <a href="contacts.html" data-i18n="nav.contacts">Контакты</a>
         </nav>
 
         <div class="header-actions">
-            <button class="lang-switch" id="langSwitch" type="button" aria-label="Switch language">EN</button>
-
-            <button
-                class="mobile-menu-toggle"
-                id="mobileMenuToggle"
-                type="button"
-                aria-label="Открыть меню"
-                aria-expanded="false"
-                aria-controls="mobileMenu">
-                <span></span>
-                <span></span>
-                <span></span>
+            <button class="lang-switch" id="langSwitch" type="button" aria-label="Switch to English">EN</button>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobileMenu">
+                <span></span><span></span><span></span>
             </button>
         </div>
     </div>
 
     <nav class="mobile-menu" id="mobileMenu" aria-label="Мобильная навигация" aria-hidden="true">
-        <a href="index.html" class="mobile-nav-link active" data-i18n="nav.home">Главная</a>
-        <a href="teams.html" class="mobile-nav-link" data-i18n="nav.teams">Составы</a>
-        <a href="matches.html" class="mobile-nav-link" data-i18n="nav.matches">Матчи</a>
-        <a href="news.html" class="mobile-nav-link" data-i18n="nav.news">Новости</a>
-        <a href="about.html" class="mobile-nav-link" data-i18n="nav.about">Об организации</a>
-        <a href="contacts.html" class="mobile-nav-link" data-i18n="nav.contacts">Контакты</a>
+        <a href="index.html" class="active" data-i18n="nav.home" aria-current="page">Главная</a>
+        <a href="teams.html" data-i18n="nav.teams">Составы</a>
+        <a href="matches.html" data-i18n="nav.matches">Матчи</a>
+        <a href="news.html" data-i18n="nav.news">Новости</a>
+        <a href="awards.html" data-i18n="nav.awards">Награды</a>
+        <a href="partners.html" data-i18n="nav.partners">Партнёры</a>
+        <a href="about.html" data-i18n="nav.about">О нас</a>
+        <a href="contacts.html" data-i18n="nav.contacts">Контакты</a>
     </nav>
 </header>
 
-<main>
-
-    <section class="hero">
-        <div class="hero-overlay"></div>
-
-        <div class="container hero-container">
+<main id="main-content">
+    <section class="hero home-hero">
+        <div class="container home-hero-grid">
             <div class="hero-content">
-
-                <span class="hero-label">VANGUARD ESPORTS</span>
-
-                <h1 class="hero-title">MORE THAN<br>A TEAM</h1>
-
-                <p class="hero-subtitle" data-i18n="hero.subtitle">
-                    Профессиональная киберспортивная организация
-                </p>
-
+                <span class="eyebrow" data-i18n="hero.label">КИБЕРСПОРТИВНАЯ ОРГАНИЗАЦИЯ</span>
+                <h1>VANGUARD <span>ESPORTS</span></h1>
+                <p class="hero-description" data-i18n="hero.description">Киберспортивная организация по Counter-Strike 2. Развиваем игроков, строим команды и стремимся к новым вершинам.</p>
                 <div class="hero-actions">
-                    <a href="teams.html" class="btn btn-primary" data-i18n="hero.cta1">
-                        Наши составы
-                    </a>
-
-                    <a href="matches.html" class="btn btn-outline" data-i18n="hero.cta2">
-                        Матчи
-                    </a>
+                    <a href="teams.html" class="btn btn-primary" data-i18n="hero.cta">Наши составы</a>
+                    <a href="about.html" class="btn btn-secondary" data-i18n="hero.secondary">Об организации</a>
                 </div>
-
+                <div class="hero-meta" aria-label="Краткая информация об организации">
+                    <div class="hero-meta-item"><strong>03</strong><span data-i18n="hero.teams">НАПРАВЛЕНИЯ</span></div>
+                    <div class="hero-meta-item"><strong>CS2</strong><span data-i18n="hero.discipline">ДИСЦИПЛИНА</span></div>
+                    <div class="hero-meta-item"><strong>2026</strong><span data-i18n="hero.since">ГОД ОСНОВАНИЯ</span></div>
+                </div>
             </div>
-
-            <div class="hero-decoration" aria-hidden="true">
-                <span>VT</span>
+            <div class="home-hero-mark" aria-hidden="true">
+                <div class="home-hero-mark-frame"><span>VT</span></div>
+                <span class="home-hero-mark-caption">MORE THAN A TEAM</span>
             </div>
         </div>
     </section>
 
-    <section class="about-preview section">
+    <section class="section home-intro">
         <div class="container">
-
             <div class="section-heading">
-                <span class="section-label">WHO WE ARE</span>
-                <h2 class="section-title" data-i18n="about.title">О Vanguard Esports</h2>
+                <span class="section-label" data-i18n="home.intro.label">WHO WE ARE</span>
+                <h2 data-i18n="home.intro.title">Больше, чем команда</h2>
+                <p data-i18n="home.intro.text">Vanguard Esports — независимая киберспортивная организация, которая выстраивает соревновательную систему в Counter-Strike 2 и создаёт условия для развития игроков.</p>
             </div>
-
-            <div class="about-content">
-                <p class="about-text" data-i18n="about.text">
-                    Vanguard Esports — независимая киберспортивная организация,
-                    развивающая соревновательные составы в Counter-Strike 2
-                    и поддерживающая молодых игроков.
-                </p>
-
-                <a href="about.html" class="text-link">
-                    <span data-i18n="teams.more">Подробнее</span>
-                    <span aria-hidden="true">↗</span>
-                </a>
+            <div class="home-principles">
+                <article class="home-principle"><span>01</span><h3 data-i18n="home.principle.one.title">Структура</h3><p data-i18n="home.principle.one.text">Последовательная система составов и понятные внутренние процессы.</p></article>
+                <article class="home-principle"><span>02</span><h3 data-i18n="home.principle.two.title">Развитие</h3><p data-i18n="home.principle.two.text">Работа над индивидуальным уровнем игроков и командной игрой.</p></article>
+                <article class="home-principle"><span>03</span><h3 data-i18n="home.principle.three.title">Результат</h3><p data-i18n="home.principle.three.text">Соревновательный подход, дисциплина и движение к новым целям.</p></article>
             </div>
-
-            <div class="stats-grid">
-                <div class="stat-item">
-                    <span class="stat-number">03</span>
-                    <span class="stat-label" data-i18n="about.stats.teams">Состава</span>
-                </div>
-
-                <div class="stat-item">
-                    <span class="stat-number">17</span>
-                    <span class="stat-label" data-i18n="about.stats.players">Игроков</span>
-                </div>
-
-                <div class="stat-item">
-                    <span class="stat-number">2026</span>
-                    <span class="stat-label" data-i18n="about.stats.year">Год основания</span>
-                </div>
-            </div>
-
         </div>
     </section>
 
-    <section class="teams-preview section">
+    <section class="section home-rosters">
         <div class="container">
-
-            <div class="section-heading">
-                <span class="section-label">OUR ROSTERS</span>
-                <h2 class="section-title" data-i18n="teams.title">Наши составы</h2>
+            <div class="section-heading section-heading-row">
+                <div><span class="section-label" data-i18n="home.teams.label">OUR TEAMS</span><h2 data-i18n="home.teams.title">Составы Vanguard</h2><p data-i18n="home.teams.description">Три направления развития игроков и соревновательной деятельности.</p></div>
+                <a href="teams.html" class="text-link" data-i18n="teams.all">Все составы <span aria-hidden="true">↗</span></a>
             </div>
-
             <div class="team-grid">
-
-                <article class="team-card">
-                    <div class="team-card-number">01</div>
-                    <span class="team-card-label" data-i18n="teams.main.badge">Основной</span>
-                    <h3 data-i18n="teams.main.name">Vanguard Main</h3>
-                    <p>Основной соревновательный состав Vanguard Esports.</p>
-                    <a href="teams.html#main" class="btn btn-outline">
-                        <span data-i18n="teams.more">Подробнее</span>
-                        <span aria-hidden="true">↗</span>
-                    </a>
-                </article>
-
-                <article class="team-card">
-                    <div class="team-card-number">02</div>
-                    <span class="team-card-label" data-i18n="teams.academy.badge">Академия</span>
-                    <h3 data-i18n="teams.academy.name">Vanguard Academy</h3>
-                    <p>Направление развития молодых игроков 13–17 лет.</p>
-                    <a href="teams.html#academy" class="btn btn-outline">
-                        <span data-i18n="teams.more">Подробнее</span>
-                        <span aria-hidden="true">↗</span>
-                    </a>
-                </article>
-
-                <article class="team-card">
-                    <div class="team-card-number">03</div>
-                    <span class="team-card-label" data-i18n="teams.junior.badge">Юниоры</span>
-                    <h3 data-i18n="teams.junior.name">Vanguard Junior</h3>
-                    <p>Направление для развития начинающих игроков.</p>
-                    <a href="teams.html#junior" class="btn btn-outline">
-                        <span data-i18n="teams.more">Подробнее</span>
-                        <span aria-hidden="true">↗</span>
-                    </a>
-                </article>
-
+                <article class="team-card home-team-card"><span class="team-tag" data-i18n="teams.main">ОСНОВНОЙ СОСТАВ</span><span class="home-team-number">01</span><div><h3>Vanguard Main</h3><p data-i18n="home.teams.main.text">Главное соревновательное направление организации.</p></div><a class="team-link" href="teams.html#main" data-i18n="teams.more">Подробнее</a></article>
+                <article class="team-card home-team-card"><span class="team-tag" data-i18n="teams.academy">АКАДЕМИЯ</span><span class="home-team-number">02</span><div><h3>Vanguard Academy</h3><p data-i18n="home.teams.academy.text">Развитие молодых игроков и подготовка к следующему уровню.</p></div><a class="team-link" href="teams.html#academy" data-i18n="teams.more">Подробнее</a></article>
+                <article class="team-card home-team-card"><span class="team-tag" data-i18n="teams.junior">МОЛОДЁЖНЫЙ СОСТАВ</span><span class="home-team-number">03</span><div><h3>Vanguard Junior</h3><p data-i18n="home.teams.junior.text">Стартовая соревновательная среда для новых игроков.</p></div><a class="team-link" href="teams.html#junior" data-i18n="teams.more">Подробнее</a></article>
             </div>
-
-            <div class="section-footer">
-                <a href="teams.html" class="text-link">
-                    <span data-i18n="teams.more">Подробнее</span>
-                    <span aria-hidden="true">↗</span>
-                </a>
-            </div>
-
         </div>
     </section>
 
-    <section class="news-preview section">
+    <section class="section home-trophy" id="trophy-room">
         <div class="container">
-
-            <div class="section-heading">
-                <span class="section-label">LATEST UPDATES</span>
-                <h2 class="section-title" data-i18n="news.title">Новости</h2>
+            <div class="section-heading section-heading-row">
+                <div><span class="section-label">VANGUARD ACHIEVEMENTS</span><h2 data-i18n="home.trophy.title">Trophy Room</h2><p data-i18n="home.trophy.description">История турниров, призовых мест и достижений наших составов.</p></div>
+                <a href="awards.html" class="text-link" data-i18n="home.trophy.all">Все награды <span aria-hidden="true">↗</span></a>
             </div>
-
-            <div class="empty-state">
-                <span class="empty-state-mark">VT</span>
-                <h3 data-i18n="news.empty.title">Новости Vanguard Esports скоро появятся</h3>
-                <p data-i18n="news.empty.text">
-                    Мы готовим актуальные анонсы и обновления.
-                    Следите за нашими социальными сетями.
-                </p>
-                <a href="news.html" class="text-link">
-                    <span data-i18n="teams.more">Подробнее</span>
-                    <span aria-hidden="true">↗</span>
-                </a>
+            <div class="trophy-empty">
+                <div class="trophy-emblem" aria-hidden="true"><span>VT</span><i></i></div>
+                <div class="trophy-empty-copy"><span class="trophy-status" data-i18n="home.trophy.status">THE COLLECTION IS IN PROGRESS</span><h3 data-i18n="home.trophy.empty.title">Коллекция достижений формируется</h3><p data-i18n="home.trophy.empty.text">Здесь будут опубликованы подтверждённые награды Vanguard Esports. Каждая запись получит отдельную страницу со статистикой турнира, результатами матчей и составом участников.</p></div>
+                <div class="trophy-count"><strong>—</strong><span data-i18n="home.trophy.count">ПОДТВЕРЖДЁННЫХ НАГРАД</span></div>
             </div>
-
         </div>
     </section>
 
+    <section class="section home-news">
+        <div class="container">
+            <div class="section-heading section-heading-row">
+                <div><span class="section-label" data-i18n="home.news.label">LATEST UPDATES</span><h2 data-i18n="home.news.title">Новости организации</h2><p data-i18n="home.news.description">Следите за жизнью Vanguard Esports.</p></div>
+                <a href="news.html" class="text-link" data-i18n="news.all">Все новости <span aria-hidden="true">↗</span></a>
+            </div>
+            <div class="empty-state"><span class="empty-state-mark">VT</span><h3 data-i18n="news.empty.title">Пока нет опубликованных новостей</h3><p data-i18n="news.empty.text">Следите за нашими социальными сетями, чтобы не пропустить обновления.</p></div>
+        </div>
+    </section>
+
+    <section class="home-contact-strip">
+        <div class="container home-contact-inner"><div><span class="section-label" data-i18n="home.contact.label">BECOME PART OF THE SYSTEM</span><h2 data-i18n="home.contact.title">Строим Vanguard вместе</h2><p data-i18n="home.contact.text">Игроки, тренеры и специалисты могут связаться с организацией.</p></div><a href="contacts.html" class="btn btn-primary" data-i18n="home.contact.cta">Связаться с нами</a></div>
+    </section>
 </main>
 
 <footer class="footer">
     <div class="container">
-
         <div class="footer-main">
-
-            <div class="footer-brand">
-                <a href="index.html" class="logo">
-                    <span class="logo-mark">VT</span>
-                    <span class="logo-text">VANGUARD<span>ESPORTS</span></span>
-                </a>
-
-                <p data-i18n="footer.description">
-                    Профессиональная киберспортивная организация
-                </p>
-            </div>
-
-            <div class="footer-column">
-                <h3 data-i18n="footer.navigation">Навигация</h3>
-                <a href="index.html" data-i18n="nav.home">Главная</a>
-                <a href="teams.html" data-i18n="nav.teams">Составы</a>
-                <a href="matches.html" data-i18n="nav.matches">Матчи</a>
-                <a href="news.html" data-i18n="nav.news">Новости</a>
-                <a href="about.html" data-i18n="nav.about">Об организации</a>
-                <a href="contacts.html" data-i18n="nav.contacts">Контакты</a>
-            </div>
-
-            <div class="footer-column">
-                <h3 data-i18n="footer.social">Социальные сети</h3>
-                <a href="https://t.me/vanguard_esportsVT" target="_blank" rel="noopener noreferrer">Telegram</a>
-                <a href="https://www.youtube.com/@VanguardEsports" target="_blank" rel="noopener noreferrer">YouTube</a>
-                <a href="https://www.instagram.com/vanguard_esportsvt/" target="_blank" rel="noopener noreferrer">Instagram</a>
-                <a href="https://www.tiktok.com/@vanguard_esports" target="_blank" rel="noopener noreferrer">TikTok</a>
-                <a href="https://www.twitch.tv/vanguard_esports" target="_blank" rel="noopener noreferrer">Twitch</a>
-            </div>
-
+            <div class="footer-brand"><a href="index.html" class="logo"><span class="logo-mark">VT</span><span class="logo-text">VANGUARD<small>ESPORTS</small></span></a><p data-i18n="footer.description">Киберспортивная организация по Counter-Strike 2.</p></div>
+            <div class="footer-column"><h3 data-i18n="footer.navigation">НАВИГАЦИЯ</h3><a href="index.html" data-i18n="nav.home">Главная</a><a href="teams.html" data-i18n="nav.teams">Составы</a><a href="matches.html" data-i18n="nav.matches">Матчи</a><a href="news.html" data-i18n="nav.news">Новости</a><a href="awards.html" data-i18n="nav.awards">Награды</a><a href="partners.html" data-i18n="nav.partners">Партнёры</a><a href="about.html" data-i18n="nav.about">О нас</a><a href="contacts.html" data-i18n="nav.contacts">Контакты</a></div>
+            <div class="footer-column"><h3 data-i18n="footer.social">СОЦИАЛЬНЫЕ СЕТИ</h3><a href="https://t.me/vanguard_esportsVT" target="_blank" rel="noopener noreferrer">Telegram</a><a href="https://www.youtube.com/@VanguardEsports" target="_blank" rel="noopener noreferrer">YouTube</a><a href="https://www.instagram.com/vanguard_esportsvt/" target="_blank" rel="noopener noreferrer">Instagram</a><a href="https://www.tiktok.com/@vanguard_esports" target="_blank" rel="noopener noreferrer">TikTok</a><a href="https://www.twitch.tv/vanguard_esports" target="_blank" rel="noopener noreferrer">Twitch</a></div>
         </div>
-
-        <div class="footer-bottom">
-            <p data-i18n="footer.rights">© 2026 Vanguard Esports. Все права защищены.</p>
-            <span>MORE THAN A TEAM</span>
-        </div>
-
+        <div class="footer-bottom"><p>© <span data-current-year>2026</span> Vanguard Esports. <span data-i18n="footer.rights">Все права защищены.</span></p><span>MORE THAN A TEAM</span></div>
     </div>
 </footer>
-
 <script src="js/main.js" defer></script>
-
 </body>
 </html>
